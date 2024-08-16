@@ -47,7 +47,7 @@ const TopNavBar: React.FC = () => {
           </button>
 
           {/* Button 3 */}
-          <div className="p-2 ">
+          <div>
             <ConnectWallet />
           </div>
         </div>

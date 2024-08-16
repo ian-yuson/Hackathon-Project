@@ -19,7 +19,8 @@ const TransferButton: FC = () => {
 
   const handleSend = async () => {
     if (!publicKey) {
-      setError("Wallet not connected");
+      // setError("Wallet not connected");
+      alert("Wallet not connected");
       return;
     }
 
@@ -51,7 +52,11 @@ const TransferButton: FC = () => {
   return (
     <div>
       <button onClick={handleSend} disabled={loading}>
-        {loading ? "Sending..." : "Buy Now"}
+        {loading ? (
+          <span className="loading loading-dots loading-md"></span>
+        ) : (
+          "Buy Now"
+        )}
       </button>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>

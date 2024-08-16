@@ -76,7 +76,7 @@ const SideBar: React.FC = () => {
         </li>
 
         {/* Footer Section */}
-        <div className="mt-auto pt-6">
+        <div className="fixed bottom-0 left-10 ">
           <div className="text-center text-base-content mb-4">
             <span className="text-lg font-semibold">Connect with us</span>
           </div>
